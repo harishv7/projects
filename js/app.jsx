@@ -107,13 +107,13 @@ var App = React.createClass({
 
 		return (
 			<div>
-				<div className = "row">
+				<div className = "row" id="projects">
 					<div className = "col-md-12">
 						<h1 className = "text-center custom-h1">PROJECTS</h1>
 					</div>
 				</div>				
 				{portfolioRowsArr}
-				<div className = "row">
+				<div className = "row" id="photos">
 					<div className = "col-md-12">
 						<h1 className = "text-center custom-h1">PHOTOGRAPHY</h1>
 					</div>

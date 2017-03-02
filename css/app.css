@@ -10,7 +10,7 @@ body {
 }
 
 .cover-image {
-	background-image: url('../images/portfolio3.jpeg');
+	/*background-image: url('../images/portfolio3.jpeg');*/
 }
 
 .vcenter {
@@ -40,7 +40,7 @@ body {
 	font-family: Roboto, sans-serif;
 	font-size: 20px;
 	font-weight: 300;
-	text-align: center;
+	text-align: center
 }
 
 #app {
@@ -55,6 +55,7 @@ body {
 	font-size: 52px;
 	letter-spacing: 3px;
 	font-weight: 300;
+	/*color: #cc3333;*/
 }
 
 .custom-heading {
@@ -69,17 +70,23 @@ hr {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
+.brand {
+	font-family: Raleway, Roboto, sans-serif;
+	font-weight: 300;
+	padding: 0 10 10 10;
+}
+
 .custom-btn {
 	display: inline-block;
 	width: 200px;
 	padding: 15px;
 	margin: 5px;
 	font-size: 16px;
-	color: #ffffff;
+	color: #000;
 	font-family: Raleway, Roboto, sans-serif;
 	background-color: transparent;
 	font-weight: 300;
-	border: 2px solid #fff;
+	border: 2px solid #000;
 	text-align: center;
 	outline: none;
 	text-decoration: none;
@@ -87,7 +94,7 @@ hr {
 .custom-btn:hover,
 .custom-btn:active {
 	background-color: rgba(206, 93, 93, 0.7);
-	border-color: #fff;
+	border-color: #000;
 	color: #fff;
 	transition: color 0.3s ease-in,
 		background-color 0.3s ease-in,
