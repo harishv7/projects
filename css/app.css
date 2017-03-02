@@ -1,4 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Handlee|Montserrat+Alternates';
+@import 'https://fonts.googleapis.com/css?family=Raleway:300,400|Roboto:300,400';
 
 body {
 	background-color: grey;
@@ -19,9 +20,7 @@ body {
 }
 
 .repoLogo {
-	/*background-image: linear-gradient(to bottom right,#56ab2f,#a8e063);*/
-	border-radius: 50%;
-	width: 70%;
+	width: 100%;
 	text-align: center;
 }
 
@@ -31,21 +30,38 @@ body {
 }
 
 .title {
-	font-family: 'Montserrat Alternates', serif;
+	font-family: 'Raleway', 'Roboto', serif;
 	font-size: 36px;
 	word-wrap: break-word;
 	text-transform: capitalize;
 }
 
 .description {
-	font-family: Handlee, sans-serif;
+	font-family: Roboto, sans-serif;
 	font-size: 20px;
+	font-weight: 300;
 	text-align: center;
 }
 
 #app {
 }
 
+body {
+	font-family: Raleway, sans-serif;
+}
+
+.custom-h1 {
+	font-family: Raleway, Roboto, sans-serif;
+	font-size: 52px;
+	letter-spacing: 3px;
+	font-weight: 300;
+}
+
+.custom-heading {
+	font-family: Raleway, Roboto, sans-serif;
+	font-size: 72px;
+	font-weight: 300;
+}
 
 hr {
     border: 0;
@@ -60,7 +76,7 @@ hr {
 	margin: 5px;
 	font-size: 16px;
 	color: #ffffff;
-	font-family: "Open Sans", Lato, Roboto, sans-serif;
+	font-family: Raleway, Roboto, sans-serif;
 	background-color: transparent;
 	font-weight: 300;
 	border: 2px solid #fff;

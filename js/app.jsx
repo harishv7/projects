@@ -33,7 +33,7 @@ var App = React.createClass({
 				populatedDescriptions.push(result[i].description);
 				populatedImgUrls.push(result[i].imgUrl);
 				populatedHomepages.push(result[i].homepage);
-				populatedHomepages.push(result[i].tag);
+				populatedTags.push(result[i].tag);
 			}
 			this.setState({
 				names: populatedNames,
@@ -61,7 +61,8 @@ var App = React.createClass({
 		var photoItemsForOneRow = [];
 
 		for(var i = 0; i < namesOfRepos.length; i++) {
-			if(tagsOfItems[i] == 'photo') {
+			console.log(tagsOfItems[i]);
+			if(tagsOfItems[i] == 'project') {
 				porfolioItemsForOneRow.push({
 					name: namesOfRepos[i],
 					desc: descOfRepos[i],
@@ -70,8 +71,8 @@ var App = React.createClass({
 					tag: tagsOfItems[i],
 					key: i
 				});
-			} else {
-					porfolioItemsForOneRow.push({
+			} else if (tagsOfItems[i] == 'photo') {
+					photoItemsForOneRow.push({
 					name: namesOfRepos[i],
 					desc: descOfRepos[i],
 					home: homepagesOfRepos[i],
@@ -81,7 +82,6 @@ var App = React.createClass({
 				});
 			}
 			
-
 			if(porfolioItemsForOneRow.length === 3) {
 				portfolioRowsArr.push(<PortfolioRow items={porfolioItemsForOneRow} />);
 				portfolioRowsArr.push(<hr />);
@@ -107,9 +107,17 @@ var App = React.createClass({
 
 		return (
 			<div>
-				<h1>Projects</h1>
+				<div className = "row">
+					<div className = "col-md-12">
+						<h1 className = "text-center custom-h1">PROJECTS</h1>
+					</div>
+				</div>				
 				{portfolioRowsArr}
-				<h1>Photography</h1>
+				<div className = "row">
+					<div className = "col-md-12">
+						<h1 className = "text-center custom-h1">PHOTOGRAPHY</h1>
+					</div>
+				</div>	
 				{photoItemsArr}
 			</div>
 		);
