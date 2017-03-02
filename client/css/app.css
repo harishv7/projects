@@ -1,0 +1,79 @@
+@import 'https://fonts.googleapis.com/css?family=Handlee|Montserrat+Alternates';
+
+body {
+	background-color: grey;
+}
+
+.heading {
+	font-family: 'Montserrat Alternates', 'Open Sans', sans-serif;
+}
+
+.cover-image {
+	background-image: url('../images/portfolio3.jpeg');
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.repoLogo {
+	/*background-image: linear-gradient(to bottom right,#56ab2f,#a8e063);*/
+	border-radius: 50%;
+	width: 70%;
+	text-align: center;
+}
+
+.image-center {
+	display: block;
+	margin: auto;
+}
+
+.title {
+	font-family: 'Montserrat Alternates', serif;
+	font-size: 36px;
+	word-wrap: break-word;
+	text-transform: capitalize;
+}
+
+.description {
+	font-family: Handlee, sans-serif;
+	font-size: 20px;
+	text-align: center;
+}
+
+#app {
+}
+
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.custom-btn {
+	display: inline-block;
+	width: 200px;
+	padding: 15px;
+	margin: 5px;
+	font-size: 16px;
+	color: #ffffff;
+	font-family: "Open Sans", Lato, Roboto, sans-serif;
+	background-color: transparent;
+	font-weight: 300;
+	border: 2px solid #fff;
+	text-align: center;
+	outline: none;
+	text-decoration: none;
+}
+.custom-btn:hover,
+.custom-btn:active {
+	background-color: rgba(206, 93, 93, 0.7);
+	border-color: #fff;
+	color: #fff;
+	transition: color 0.3s ease-in,
+		background-color 0.3s ease-in,
+		border-color 0.3s ease-in;
+}
