@@ -1,36 +1,3 @@
-var gitHubUserName = "harishv7";
-var gradients = [{
-	first: '#56ab2f',
-	second: '#a8e063'
-}, {
-	first: '#E0EAFC',
-	second: '#CFDEF3'
-}, {
-	first: '#C9FFBF',
-	second: '#FFAFBD'
-}, {
-	first: '#00d2ff',
-	second: '#3a7bd5'
-}, {
-	first: '#2BC0E4',
-	second: '#EAECC6'
-}, {
-	first: '#F09819',
-	second: '#EDDE5D'
-}, {
-	first: '#EDE574',
-	second: '#E1F5C4'
-}, {
-	first: '#B3FFAB',
-	second: '#12FFF7'
-}, {
-	first: '#0072ff',
-	second: '#00c6ff'
-}, {
-	first: '#4CB8C4',
-	second: '#3CD3AD'
-}];
-
 function getParameterByName(name, url) {
     if (!url) url = window.location.href;
     name = name.replace(/[\[\]]/g, "\\$&");
@@ -48,7 +15,8 @@ var App = React.createClass({
 	        description: [],
 	        portfolioRows: [],
 	        imgUrls: [],
-	        homepages: []  
+	        homepages: [],
+	        tags: []
 	    };
 	},
 	componentWillMount() {
@@ -56,14 +24,7 @@ var App = React.createClass({
 		var populatedDescriptions = [];
 		var populatedHomepages = [];
 		var populatedImgUrls = [];
-
-		// check if there is a query param for the username
-		var currentUrl = window.location.href;
-		var username = getParameterByName('name', currentUrl);
-
-		if(username != null && username != "" && username != " ") {
-			gitHubUserName = username;
-		}
+		var populatedTags = [];
 
 		var apiUrl = "http://harishv.me/portfolio.json";
 		this.serverRequest = $.get(apiUrl, function (result) {
@@ -72,12 +33,14 @@ var App = React.createClass({
 				populatedDescriptions.push(result[i].description);
 				populatedImgUrls.push(result[i].imgUrl);
 				populatedHomepages.push(result[i].homepage);
+				populatedHomepages.push(result[i].tag);
 			}
 			this.setState({
 				names: populatedNames,
 				description: populatedDescriptions,
 				imgUrls: populatedImgUrls,
-				homepages: populatedHomepages
+				homepages: populatedHomepages,
+				tags: populatedTags
 			});
 		}.bind(this));
 	},
@@ -90,22 +53,45 @@ var App = React.createClass({
 		var descOfRepos = this.state.description;
 		var homepagesOfRepos = this.state.homepages;
 		var imgUrlsOfRepos = this.state.imgUrls;
+		var tagsOfItems = this.state.tags;
 
 		var portfolioRowsArr = [];
 		var porfolioItemsForOneRow = [];
+		var photoItemsArr = [];
+		var photoItemsForOneRow = [];
+
 		for(var i = 0; i < namesOfRepos.length; i++) {
-			porfolioItemsForOneRow.push({
-				name: namesOfRepos[i],
-				desc: descOfRepos[i],
-				home: homepagesOfRepos[i],
-				imgUrl: imgUrlsOfRepos[i],
-				key: i
-			});
+			if(tagsOfItems[i] == 'photo') {
+				porfolioItemsForOneRow.push({
+					name: namesOfRepos[i],
+					desc: descOfRepos[i],
+					home: homepagesOfRepos[i],
+					imgUrl: imgUrlsOfRepos[i],
+					tag: tagsOfItems[i],
+					key: i
+				});
+			} else {
+					porfolioItemsForOneRow.push({
+					name: namesOfRepos[i],
+					desc: descOfRepos[i],
+					home: homepagesOfRepos[i],
+					imgUrl: imgUrlsOfRepos[i],
+					tag: tagsOfItems[i],
+					key: i
+				});
+			}
+			
 
 			if(porfolioItemsForOneRow.length === 3) {
 				portfolioRowsArr.push(<PortfolioRow items={porfolioItemsForOneRow} />);
 				portfolioRowsArr.push(<hr />);
 				porfolioItemsForOneRow = [];
+			}
+
+			if(photoItemsForOneRow.length === 3) {
+				photoItemsArr.push(<PortfolioRow items={photoItemsForOneRow} />);
+				photoItemsArr.push(<hr />);
+				photoItemsForOneRow = [];
 			}
 		}
 
@@ -113,11 +99,18 @@ var App = React.createClass({
 		if(porfolioItemsForOneRow.length > 0) {
 			portfolioRowsArr.push(<PortfolioRow items={porfolioItemsForOneRow} />);
 			portfolioRowsArr.push(<hr />);
-		}	
+		}
+		if(photoItemsForOneRow.length > 0) {
+			photoItemsArr.push(<PortfolioRow items={photoItemsForOneRow} />);
+			photoItemsArr.push(<hr />);
+		}
 
 		return (
 			<div>
+				<h1>Projects</h1>
 				{portfolioRowsArr}
+				<h1>Photography</h1>
+				{photoItemsArr}
 			</div>
 		);
 	}
@@ -139,9 +132,9 @@ var PortfolioRow = React.createClass({
 		}
 		return (
 			<div className="row"> 
-				{firstItemExists ? <PortfolioItem title={this.props.items[0].name} desc={this.props.items[0].desc} home={this.props.items[0].home} imgUrl={this.props.items[0].imgUrl} /> : null}
-				{secondItemExists ? <PortfolioItem title={this.props.items[1].name} desc={this.props.items[1].desc} home={this.props.items[1].home} imgUrl={this.props.items[1].imgUrl} /> : null}
-				{thirdItemExists ? <PortfolioItem title={this.props.items[2].name} desc={this.props.items[2].desc} home={this.props.items[2].home} imgUrl={this.props.items[2].imgUrl} /> : null}
+				{firstItemExists ? <PortfolioItem tag={this.props.items[0].tag} title={this.props.items[0].name} desc={this.props.items[0].desc} home={this.props.items[0].home} imgUrl={this.props.items[0].imgUrl} /> : null}
+				{secondItemExists ? <PortfolioItem tag={this.props.items[1].tag} title={this.props.items[1].name} desc={this.props.items[1].desc} home={this.props.items[1].home} imgUrl={this.props.items[1].imgUrl} /> : null}
+				{thirdItemExists ? <PortfolioItem tag={this.props.items[2].tag} title={this.props.items[2].name} desc={this.props.items[2].desc} home={this.props.items[2].home} imgUrl={this.props.items[2].imgUrl} /> : null}
         	</div>
 		);
 	}
@@ -155,17 +148,9 @@ var PortfolioItem = React.createClass({
 			showHome = false;
 		}
 
-		// choose a random gradient
-		var randomNum = Math.floor(Math.random() * (gradients.length));
-		var gradient = gradients[randomNum];
-		// craft the css
-		var gradientStatement = "linear-gradient(to bottom right," + gradient.first + "," + gradient.second +")";
-		// console.log(gradientStatement);
-		var gradientStyle = {backgroundImage: gradientStatement};
-		// var gradientStyle = "background-image: linear-gradient(to bottom right,#56ab2f,#a8e063);";
 		return (
 			<div className="col-md-4">
-				<img src={this.props.imgUrl} className="img-responsive repoLogo image-center" style={gradientStyle}/> 
+				<img src={this.props.imgUrl} className="img-responsive repoLogo image-center"/> 
                 <h2 className="text-center title">{this.props.title}</h2> 
                 <p className="description">{this.props.desc}</p>
                 {showHome ? <p className="description"><a href={this.props.home} >Homepage</a></p> : null }
