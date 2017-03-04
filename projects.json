@@ -45,35 +45,35 @@
 		"name": "MoneySmart Calculator",
 		"description": "A group of financial calculators created for people to easily make calculations on their mortgage, ABSD, compound interest etc. Done as part of my internship with MoneySmart.sg",
 		"imgUrl": "http://imgur.com/ljK7Xl7.png",
-		"homepage": "http://www.moneysmart.sg/",
+		"homepage": "www.moneysmart.sg/",
 		"tags": ["HTML", "CSS", "JS", "ReactJS", "React Native", "Gulp", "Grunt", "iOS", "Android", "Xcode"]
 	},
 	{
 		"name": "Mirra Fine Arts",
 		"description": "A corporate website for Mirra Fine Arts in Singapore. Mirra Fine Arts provides excellent keyboard and guitar lessons for all people of all ages.",
 		"imgUrl": "http://imgur.com/SutQxbU.png",
-		"homepage": "http://mirrafinearts.com",
+		"homepage": "www.mirrafinearts.com",
 		"tags": ["HTML", "CSS", "JS", "Bootstrap", "jQuery", "Gulp"]
 	},
 	{
 		"name": "Aparna Weds Kaushik - A Wedding Website by Harish",
 		"description": "A wedding website for my friends which provides details of the occassion, venue and allows users to RSVP.",
 		"imgUrl": "http://imgur.com/lfVR4BC.png",
-		"homepage": "http://aparnawedskaushik.life/",
+		"homepage": "www.aparnawedskaushik.life/",
 		"tags": ["HTML", "CSS", "JS", "Bootstrap"]
 	},
 	{
 		"name": "Moovee Finder",
 		"description": "A search engine website for movie information.",
 		"imgUrl": "http://imgur.com/3wButh8.png",
-		"homepage": "http://harishv.me/MooveeFinder/",
+		"homepage": "www.harishv.me/MooveeFinder/",
 		"tags": ["HTML", "CSS", "JS", "Bootstrap", "ReactJS"]
 	},
 	{
 		"name": "CapCalc",
 		"description": "A CAP Calculator to help NUS students calculate theirs easily.",
 		"imgUrl": "http://imgur.com/9F5VaSe.png",
-		"homepage": "http://harishv.me/capcalc/",
+		"homepage": "www.harishv.me/capcalc/",
 		"tags": ["HTML", "CSS", "JS", "Bootstrap", "ReactJS"]
 	},
 	{
