@@ -58,7 +58,7 @@
 		"description": "A CAP Calculator to help NUS students calculate theirs easily.",
 		"imgUrl": "http://imgur.com/9F5VaSe.png",
 		"homepage": "http://harishv.me/capcalc/"
-	}
+	},
 	{
 		"name": "GitHub Portfolio",
 		"description": "A website which automatically creates a portfolio from all of your GitHub repositories.",
