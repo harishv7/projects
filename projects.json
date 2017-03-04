@@ -15,14 +15,14 @@
 	},
 	{
 		"name": "Friendezvous",
-		"description": "Friendezvous is a web application that allows users to easily create and schedule meeting in a group. Friendezvous helps eliminate the hassle that comes about when organising meetings in a huge group by collecting the free slots of the members and their preferred locations. <br> Once this is done, Friendezvous allows the admin of the meeting to confirm a selected time and place and informs all participants automatically.",
+		"description": "Friendezvous is a web application that allows users to easily create and schedule meeting in a group. Friendezvous helps eliminate the hassle that comes about when organising meetings in a huge group by collecting the free slots of the members and their preferred locations. Once this is done, Friendezvous allows the admin of the meeting to confirm a selected time and place and informs all participants automatically.",
 		"imgUrl": "http://imgur.com/L6VrZt8.png",
 		"homepage": "http://friendezvous.herokuapp.com/",
 		"tags": ["HTML", "CSS", "JS", "Bootstrap", "SQL", "PHP", "jQuery", "Google APIs"]
 	},
 	{
 		"name": "Fini",
-		"description": "FINI is a free and simple user-friendly software that aims to solve one of the most common dilemmas we face daily: Task Management. In the context of our modern world, we are often swarmed with many tasks and deadlines from work, activities with friends and events that we cannot afford to miss. In order to successfully complete every work assignment you have and be the life of the party at every event you attend, you need to manage your priorities effectively and efficiently. <br> How is that possible you may ask? FINI is the answer. With FINI, you will be able to organize your tasks and accomplish them efficiently. That, is the very meaning of FINI, which translates to “finished” or “accomplished” in French.",
+		"description": "FINI is a free and simple user-friendly software that aims to solve one of the most common dilemmas we face daily: Task Management. In the context of our modern world, we are often swarmed with many tasks and deadlines from work, activities with friends and events that we cannot afford to miss. In order to successfully complete every work assignment you have and be the life of the party at every event you attend, you need to manage your priorities effectively and efficiently. How is that possible you may ask? FINI is the answer. With FINI, you will be able to organize your tasks and accomplish them efficiently. That, is the very meaning of FINI, which translates to “finished” or “accomplished” in French.",
 		"imgUrl": "http://imgur.com/U1VnpEv.png",
 		"homepage": "https://github.com/cs2103aug2015-t16-1j/fini",
 		"tags": ["Java", "JavaFX", "CSS"]
