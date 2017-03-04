@@ -33,7 +33,7 @@ var App = React.createClass({
 				populatedDescriptions.push(result[i].description);
 				populatedImgUrls.push(result[i].imgUrl);
 				populatedHomepages.push(result[i].homepage);
-				populatedTags.push(result[i].tag);
+				populatedTags.push(result[i].tags);
 			}
 			this.setState({
 				names: populatedNames,
@@ -53,11 +53,12 @@ var App = React.createClass({
 		var descOfProjects = this.state.description;
 		var homepagesOfProjects = this.state.homepages;
 		var imgUrlsOfProjects = this.state.imgUrls;
+		var tagsOfProjects = this.state.tags;
 
 		var portfolioRowsArr = [];
 
 		for(var i = 0; i < namesOfProjects.length; i++) {
-			portfolioRowsArr.push(<PortfolioItem name={namesOfProjects[i]} desc={descOfProjects[i]} homeUrl={homepagesOfProjects[i]} imgUrl={imgUrlsOfProjects[i]} key={i} />);
+			portfolioRowsArr.push(<PortfolioItem name={namesOfProjects[i]} desc={descOfProjects[i]} homeUrl={homepagesOfProjects[i]} imgUrl={imgUrlsOfProjects[i]} tags={tagsOfProjects[i]} key={i} />);
 			portfolioRowsArr.push(<hr/>)
 		}
 
@@ -71,6 +72,11 @@ var App = React.createClass({
 
 var PortfolioItem = React.createClass({
 	render: function() {
+		var tags = this.props.tags;
+		var tagsToShow = [];
+		for(var i = 0; i < tags.length; i++) {
+			tagsToShow.push(<span class="tags">tags[i]</span>);
+		}
 		return (
 			<div className="section">
 		      <div className="container">
@@ -80,8 +86,8 @@ var PortfolioItem = React.createClass({
 		          </div>
 		          <div className="col-md-6">
 		            <h1 className="project-heading">{this.props.name}</h1>
-		            <h3>A subtitle</h3>
 		            <p className="project-desc">{this.props.desc}</p>
+		            {tagsToShow}
 		          </div>
 		        </div>
 		      </div>

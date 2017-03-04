@@ -19,6 +19,10 @@
 	margin: auto;
 }
 
+p {
+	font-size: 18px;
+}
+
 .title {
 	font-family: 'Raleway', 'Roboto', serif;
 	word-wrap: break-word;
