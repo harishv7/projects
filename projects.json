@@ -18,7 +18,7 @@
 		"description": "Friendezvous is a web application that allows users to easily create and schedule meeting in a group. Friendezvous helps eliminate the hassle that comes about when organising meetings in a huge group by collecting the free slots of the members and their preferred locations. Once this is done, Friendezvous allows the admin of the meeting to confirm a selected time and place and informs all participants automatically.",
 		"imgUrl": "http://imgur.com/L6VrZt8.png",
 		"homepage": "http://friendezvous.herokuapp.com/",
-		"tags": ["HTML", "CSS", "JS", "Bootstrap", "SQL", "PHP", "jQuery"]
+		"tags": ["HTML", "CSS", "JS", "Bootstrap", "SQL", "PHP", "jQuery", "Google APIs"]
 	},
 	{
 		"name": "Fini",
@@ -46,7 +46,14 @@
 		"description": "A group of financial calculators created for people to easily make calculations on their mortgage, ABSD, compound interest etc. Done as part of my internship with MoneySmart.sg",
 		"imgUrl": "http://imgur.com/ljK7Xl7.png",
 		"homepage": "http://www.moneysmart.sg/",
-		"tags": ["ReactJS", "React Native", "iOS"]
+		"tags": ["HTML", "CSS", "JS", "ReactJS", "React Native", "Gulp", "Grunt", "iOS", "Android", "Xcode"]
+	},
+	{
+		"name": "Mirra Fine Arts",
+		"description": "A corporate website for Mirra Fine Arts in Singapore. Mirra Fine Arts provides keyboard and guitar lessons for all people of all ages.",
+		"imgUrl": "http://imgur.com/SutQxbU.png",
+		"homepage": "http://mirrafinearts.com",
+		"tags": ["HTML", "CSS", "JS", "Bootstrap", "jQuery", "Gulp"]
 	},
 	{
 		"name": "Aparna Weds Kaushik - A Wedding Website by Harish",
