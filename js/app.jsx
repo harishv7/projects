@@ -75,7 +75,7 @@ var PortfolioItem = React.createClass({
 		var tags = this.props.tags;
 		var tagsToShow = [];
 		for(var i = 0; i < tags.length; i++) {
-			tagsToShow.push(<span class="tags">tags[i]</span>);
+			tagsToShow.push(<span className="project-tag">{tags[i]}</span>);
 		}
 		return (
 			<div className="section">
@@ -87,6 +87,8 @@ var PortfolioItem = React.createClass({
 		          <div className="col-md-6">
 		            <h1 className="project-heading">{this.props.name}</h1>
 		            <p className="project-desc">{this.props.desc}</p>
+		            <a href={this.props.homeUrl} className="project-url">{this.props.homeUrl}</a>
+		            <br/> <br/>
 		            {tagsToShow}
 		          </div>
 		        </div>

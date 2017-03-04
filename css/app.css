@@ -43,7 +43,9 @@ p {
 	text-align: center
 }
 
-#app {
+.drawing {
+	height: 50%;
+	padding-top: 30px;
 }
 
 body {
@@ -63,6 +65,22 @@ body {
 	width: 100%;
 }
 
+.project-tag {
+	font-family: Roboto, sans-serif;
+	font-weight: 300;
+	padding: 5px;
+	background-color: #cc3333;
+	color: white;
+	border-radius: 3px;
+	margin-right: 5px;
+}
+
+.project-url {
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+}
+
 .custom-h1 {
 	font-family: Raleway, Roboto, sans-serif;
 	font-size: 52px;
@@ -75,6 +93,8 @@ body {
 	font-family: Raleway, Roboto, sans-serif;
 	font-size: 72px;
 	font-weight: 300;
+	padding-top: 0px;
+	margin-top: 0px;
 }
 
 .custom-sub-heading {
