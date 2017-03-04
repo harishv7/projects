@@ -76,7 +76,7 @@ var PortfolioItem = React.createClass({
 		      <div className="container">
 		        <div className="row">
 		          <div className="col-md-6">
-		            <img src={this.props.imgUrl} className="img-responsive" />
+		            <img src={this.props.imgUrl} className="project-logo img-responsive" />
 		          </div>
 		          <div className="col-md-6">
 		            <h1 className="project-heading">{this.props.name}</h1>

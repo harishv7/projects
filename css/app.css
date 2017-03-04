@@ -1,9 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Handlee|Montserrat+Alternates';
 @import 'https://fonts.googleapis.com/css?family=Raleway:300,400|Roboto:300,400';
-
-body {
-	background-color: grey;
-}
 
 .heading {
 	font-family: 'Montserrat Alternates', 'Open Sans', sans-serif;
@@ -17,16 +12,6 @@ body {
     display: inline-block;
     vertical-align: middle;
     float: none;
-}
-
-.repoLogo {
-	width: 100%;
-	text-align: center;
-	position: relative; 
-}
-
-.repoLogo:hover + .title {
-	display: block;
 }
 
 .image-center {
@@ -68,6 +53,10 @@ body {
 .project-desc {
 	font-family: Roboto, sans-serif;
 	font-weight: 300;
+}
+
+.project-logo {
+	width: 100%;
 }
 
 .custom-h1 {
