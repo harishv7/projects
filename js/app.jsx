@@ -26,7 +26,7 @@ var App = React.createClass({
 		var populatedImgUrls = [];
 		var populatedTags = [];
 
-		var apiUrl = "http://harishv.me/portfolio.json";
+		var apiUrl = "http://harishv.me/projects/projects.json";
 		this.serverRequest = $.get(apiUrl, function (result) {
 			for (var i = 0; i < result.length; i++) { 
 				populatedNames.push(result[i].name);
@@ -49,120 +49,43 @@ var App = React.createClass({
 	},
 	render: function() {
 		// create all the rows we need and populate into an array
-		var namesOfRepos = this.state.names;
-		var descOfRepos = this.state.description;
-		var homepagesOfRepos = this.state.homepages;
-		var imgUrlsOfRepos = this.state.imgUrls;
-		var tagsOfItems = this.state.tags;
+		var namesOfProjects = this.state.names;
+		var descOfProjects = this.state.description;
+		var homepagesOfProjects = this.state.homepages;
+		var imgUrlsOfProjects = this.state.imgUrls;
 
 		var portfolioRowsArr = [];
-		var porfolioItemsForOneRow = [];
-		var photoItemsArr = [];
-		var photoItemsForOneRow = [];
 
-		for(var i = 0; i < namesOfRepos.length; i++) {
-			console.log(tagsOfItems[i]);
-			if(tagsOfItems[i] == 'project') {
-				porfolioItemsForOneRow.push({
-					name: namesOfRepos[i],
-					desc: descOfRepos[i],
-					home: homepagesOfRepos[i],
-					imgUrl: imgUrlsOfRepos[i],
-					tag: tagsOfItems[i],
-					key: i
-				});
-			} else if (tagsOfItems[i] == 'photo') {
-					photoItemsForOneRow.push({
-					name: namesOfRepos[i],
-					desc: descOfRepos[i],
-					home: homepagesOfRepos[i],
-					imgUrl: imgUrlsOfRepos[i],
-					tag: tagsOfItems[i],
-					key: i
-				});
-			}
-			
-			if(porfolioItemsForOneRow.length === 3) {
-				portfolioRowsArr.push(<PortfolioRow items={porfolioItemsForOneRow} />);
-				portfolioRowsArr.push(<hr />);
-				porfolioItemsForOneRow = [];
-			}
-
-			if(photoItemsForOneRow.length === 3) {
-				photoItemsArr.push(<PortfolioRow items={photoItemsForOneRow} />);
-				photoItemsArr.push(<hr />);
-				photoItemsForOneRow = [];
-			}
-		}
-
-		// push any remaining items
-		if(porfolioItemsForOneRow.length > 0) {
-			portfolioRowsArr.push(<PortfolioRow items={porfolioItemsForOneRow} />);
-			portfolioRowsArr.push(<hr />);
-		}
-		if(photoItemsForOneRow.length > 0) {
-			photoItemsArr.push(<PortfolioRow items={photoItemsForOneRow} />);
-			photoItemsArr.push(<hr />);
+		for(var i = 0; i < namesOfProjects.length; i++) {
+			portfolioRowsArr.push(<PortfolioItem name={namesOfProjects[i]} desc={descOfProjects[i]} homeUrl={homepagesOfProjects[i]} imgUrl={imgUrlsOfProjects[i]} key={i} />);
+			portfolioRowsArr.push(<hr/>)
 		}
 
 		return (
 			<div>
-				<div className = "row" id="projects">
-					<div className = "col-md-12">
-						<h1 className = "text-center custom-h1">PROJECTS</h1>
-					</div>
-				</div>				
 				{portfolioRowsArr}
-				<div className = "row" id="photos">
-					<div className = "col-md-12">
-						<h1 className = "text-center custom-h1">PHOTOGRAPHY</h1>
-					</div>
-				</div>	
-				{photoItemsArr}
 			</div>
-		);
-	}
-});
-
-var PortfolioRow = React.createClass({
-	render: function() {
-		var firstItemExists = true, secondItemExists = true, thirdItemExists = true;
-		// check if the 3 items exist
-		if(typeof this.props.items[0] == 'undefined') {
-			firstItemExists = false;
-			secondItemExists = false;
-			thirdItemExists = false;
-		} else if (typeof this.props.items[1] == 'undefined') {
-			secondItemExists = false;
-			thirdItemExists = false;
-		} else if (typeof this.props.items[2] == 'undefined') {
-			thirdItemExists = false;
-		}
-		return (
-			<div className="row"> 
-				{firstItemExists ? <PortfolioItem tag={this.props.items[0].tag} title={this.props.items[0].name} desc={this.props.items[0].desc} home={this.props.items[0].home} imgUrl={this.props.items[0].imgUrl} /> : null}
-				{secondItemExists ? <PortfolioItem tag={this.props.items[1].tag} title={this.props.items[1].name} desc={this.props.items[1].desc} home={this.props.items[1].home} imgUrl={this.props.items[1].imgUrl} /> : null}
-				{thirdItemExists ? <PortfolioItem tag={this.props.items[2].tag} title={this.props.items[2].name} desc={this.props.items[2].desc} home={this.props.items[2].home} imgUrl={this.props.items[2].imgUrl} /> : null}
-        	</div>
 		);
 	}
 });
 
 var PortfolioItem = React.createClass({
 	render: function() {
-		var showHome = true;
-		// check if homepage exists
-		if(this.props.home === null || this.props.home === "" || this.props.home === " ") {
-			showHome = false;
-		}
-
 		return (
-			<div className="col-md-4">
-				<img src={this.props.imgUrl} className="img-responsive repoLogo image-center"/> 
-                <h2 className="text-center title">{this.props.title}</h2> 
-                <p className="description">{this.props.desc}</p>
-                {showHome ? <p className="description"><a href={this.props.home} >Homepage</a></p> : null }
-			</div>
+			<div className="section">
+		      <div className="container">
+		        <div className="row">
+		          <div className="col-md-6">
+		            <img src={this.props.imgUrl} className="img-responsive" />
+		          </div>
+		          <div className="col-md-6">
+		            <h1 className="project-heading">{this.props.name}</h1>
+		            <h3>A subtitle</h3>
+		            <p className="project-desc">{this.props.desc}</p>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
 		);
 	}
 });

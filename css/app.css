@@ -22,6 +22,11 @@ body {
 .repoLogo {
 	width: 100%;
 	text-align: center;
+	position: relative; 
+}
+
+.repoLogo:hover + .title {
+	display: block;
 }
 
 .image-center {
@@ -31,9 +36,15 @@ body {
 
 .title {
 	font-family: 'Raleway', 'Roboto', serif;
-	font-size: 36px;
 	word-wrap: break-word;
 	text-transform: capitalize;
+	position: absolute; 
+   top: 210px; 
+   left: 0; 
+   width: 100%;
+   background-color: white;
+   opacity: 0.7;
+   display: none;
 }
 
 .description {
@@ -47,7 +58,16 @@ body {
 }
 
 body {
-	font-family: Raleway, sans-serif;
+	font-family: Raleway, Roboto, sans-serif;
+}
+
+.project-heading {
+	font-family: Raleway, Roboto, sans-serif;
+}
+
+.project-desc {
+	font-family: Roboto, sans-serif;
+	font-weight: 300;
 }
 
 .custom-h1 {
@@ -64,6 +84,13 @@ body {
 	font-weight: 300;
 }
 
+.custom-sub-heading {
+	font-family: Raleway, Roboto, sans-serif;
+	font-size: 48px;
+	font-weight: 300;
+}
+
+
 hr {
     border: 0;
     height: 1px;
@@ -74,6 +101,11 @@ hr {
 	font-family: Raleway, Roboto, sans-serif;
 	font-weight: 300;
 	padding: 0 10 10 10;
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
 }
 
 .custom-btn {
