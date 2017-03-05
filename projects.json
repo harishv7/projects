@@ -14,6 +14,13 @@
 		"tags": ["HTML", "CSS", "JS", "Bootstrap", "Jekyll", "Markdown"]
 	},
 	{
+		"name": "Harish V - Photography",
+		"description": "My own mosaic of photos. #iPhonePhotography",
+		"imgUrl": "http://imgur.com/iNCuZQg.png",
+		"homepage": "http://harishv.me/photography/",
+		"tags": ["HTML", "CSS", "JS", "jQuery"]
+	},
+	{
 		"name": "Friendezvous",
 		"description": "Friendezvous is a web application that allows users to easily create and schedule meeting in a group. Friendezvous helps eliminate the hassle that comes about when organising meetings in a huge group by collecting the free slots of the members and their preferred locations. Once this is done, Friendezvous allows the admin of the meeting to confirm a selected time and place and informs all participants automatically.",
 		"imgUrl": "http://imgur.com/L6VrZt8.png",
