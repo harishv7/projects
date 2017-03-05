@@ -46,7 +46,7 @@
 		"description": "A group of financial calculators created for people to easily make calculations on their mortgage, ABSD, compound interest etc. Done as part of my internship with MoneySmart.sg",
 		"imgUrl": "http://imgur.com/ljK7Xl7.png",
 		"homepage": "www.moneysmart.sg/",
-		"tags": ["HTML", "CSS", "JS", "ReactJS", "React Native", "Gulp", "Grunt", "iOS", "Android", "Xcode"]
+		"tags": ["HTML", "CSS", "JS", "ReactJS", "React Native", "Grunt", "iOS", "Xcode"]
 	},
 	{
 		"name": "Mirra Fine Arts",
