@@ -91,10 +91,10 @@ body {
 
 .custom-heading {
 	font-family: Raleway, Roboto, sans-serif;
-	font-size: 72px;
 	font-weight: 300;
 	padding-top: 0px;
 	margin-top: 0px;
+	width: 100%;
 }
 
 .custom-sub-heading {
