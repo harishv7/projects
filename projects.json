@@ -56,6 +56,13 @@
 		"tags": ["HTML", "CSS", "JS", "ReactJS", "React Native", "Grunt", "iOS", "Xcode"]
 	},
 	{
+		"name": "Tweet Battle",
+		"description": "Given 2 Twitter handles, this app generates tweets from the 2 users' tweet history using Markov's models. Built during Facebook Hackathon SG 2016.",
+		"imgUrl": "http://imgur.com/gUtF3RA.png",
+		"homepage": "https://github.com/advaypal/TweetBattle",
+		"tags": ["HTML", "CSS", "JS", "ReactJS", "React Native", "Flask", "Heroku"]
+	},
+	{
 		"name": "Mirra Fine Arts",
 		"description": "A corporate website for Mirra Fine Arts in Singapore. Mirra Fine Arts provides excellent keyboard and guitar lessons for all people of all ages.",
 		"imgUrl": "http://imgur.com/SutQxbU.png",
