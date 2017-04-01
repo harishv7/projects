@@ -1,14 +1,14 @@
 [
 	{
 		"name": "Harish V - Homepage",
-		"description": "My own personal website.",
+		"description": "My personal website.",
 		"imgUrl": "http://imgur.com/buJxKdH.png",
 		"homepage": "http://harishv.me/",
 		"tags": ["HTML", "CSS", "JS", "Bootstrap"]
 	},
 	{
 		"name": "Harish V - Blog",
-		"description": "My own personal blog - I write about life and code in general.",
+		"description": "My personal blog - I write about life and code in general.",
 		"imgUrl": "http://imgur.com/prE7rln.png",
 		"homepage": "http://harishv.me/blog/",
 		"tags": ["HTML", "CSS", "JS", "Bootstrap", "Jekyll", "Markdown"]
@@ -74,7 +74,7 @@
 		"description": "A wedding website for my friends which provides details of the occassion, venue and allows users to RSVP.",
 		"imgUrl": "http://imgur.com/lfVR4BC.png",
 		"homepage": "www.aparnawedskaushik.life/",
-		"tags": ["HTML", "CSS", "JS", "Bootstrap"]
+		"tags": ["HTML", "CSS", "JS", "Bootstrap", "ReactJS"]
 	},
 	{
 		"name": "Moovee Finder",
