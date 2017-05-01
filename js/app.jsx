@@ -26,7 +26,7 @@ var App = React.createClass({
 		var populatedImgUrls = [];
 		var populatedTags = [];
 
-		var apiUrl = "http://harishv.me/projects/projects.json";
+		var apiUrl = "https://harishv.me/projects/projects.json";
 		this.serverRequest = $.get(apiUrl, function (result) {
 			for (var i = 0; i < result.length; i++) { 
 				populatedNames.push(result[i].name);
