@@ -31,7 +31,7 @@ var App = React.createClass({
 			for (var i = 0; i < result.length; i++) { 
 				populatedNames.push(result[i].name);
 				populatedDescriptions.push(result[i].description);
-				populatedImgUrls.push(result[i].imgUrl);
+				populatedImgUrls.push(result[i].imgUrl.replace("http", "https"));
 				populatedHomepages.push(result[i].homepage);
 				populatedTags.push(result[i].tags);
 			}
