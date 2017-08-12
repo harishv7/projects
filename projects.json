@@ -1,14 +1,14 @@
 [{
         "name": "HealthX",
         "description": "(First Prize) Crowdsourced Fitness App Design",
-        "imgUrl": "http://imgur.com/wfNN6ZV.png",
+        "imgUrl": "http://imgur.com/LLn2ANq.png",
         "homepage": "https://harishv.me/blog/War-on-Diabetes-Designathon",
         "tags": ["UI Design", "Sketch", "Marvel", "Prototyping", "iOS"]
     },
     {
         "name": "NUS-MIT Datathon",
         "description": "(First Runner Up) NUS-MIT Datathon",
-        "imgUrl": "http://imgur.com/MVtlsWX.png",
+        "imgUrl": "http://imgur.com/6YAnqrk.png",
         "homepage": "https://harishv.me/blog/NUS-MIT-Datathon",
         "tags": ["Machine Learning", "R", "Python", "PostgreSQL", "Jupyter Notebook"]
     },
