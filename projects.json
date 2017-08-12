@@ -104,6 +104,19 @@
         "tags": ["HTML", "CSS", "JS", "Bootstrap", "ReactJS"]
     },
     {
+        "name": "ConTag",
+        "description": "(First Runner Up - Gamecraft 2014). This is a 2-player game created at Gamecraft 2014 (a 24 hour hackathon to create a working prototype of a game). ConTag is based on the theme of 'Contact' and is inspired from the popular Bomberman game.",
+        "imgUrl": "http://imgur.com/K9Jrnns.png",
+        "homepage": "",
+        "tags": ["Game Design", "Gamemaker", "Sprite Design"]
+    },
+    {
+        "name": "Twisted Maze",
+        "description": "TwistedMaze was built in just 24 hours for a national game-hackathon, Gamecraft 2015. Twisted Maze is a game that would put you inside an ever-changing maze. Starting from the middle of a circular maze, you have to find your exit. However, here's the twist: The maze is not stationary. At certain intervals, the maze will rotate around the center. So here's the challenge: how fast can you escape?",
+        "imgUrl": "http://imgur.com/VgPbHs0.png",
+        "homepage": "https://github.com/harishv7/TwistedMaze",
+        "tags": ["Game Design", "Gamemaker", "Sprite Design"]
+    } {
         "name": "Simple Clock",
         "description": "A simple clock with randomised motivational quotes - inspired by Momemtum for Chrome.",
         "imgUrl": "http://imgur.com/qMxKDnZ.png",
