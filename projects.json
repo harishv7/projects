@@ -116,7 +116,7 @@
         "imgUrl": "http://imgur.com/VgPbHs0.png",
         "homepage": "https://github.com/harishv7/TwistedMaze",
         "tags": ["Game Design", "Gamemaker", "Sprite Design"]
-    } {
+    }, {
         "name": "Simple Clock",
         "description": "A simple clock with randomised motivational quotes - inspired by Momemtum for Chrome.",
         "imgUrl": "http://imgur.com/qMxKDnZ.png",
