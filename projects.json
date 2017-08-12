@@ -1,13 +1,13 @@
 [{
         "name": "HealthX",
-        "description": "(First Prize) Crowdsourced Fitness App Design",
+        "description": "(First Prize) Crowdsourced Fitness App Design. Singapore has the second highest proportion of diabetics among developed nations, according to a report in 2015 by the International Diabetes Federation (IDF). In this designathon, my team aimed to solve the problem of the lack of physical activity among working adults in Singapore, and at the same time motivate pre-diabetics to undertake an active lifestyle with ease. For our concept and design of a crowdsourced fitness app, we won the first prize in the designathon.",
         "imgUrl": "http://imgur.com/LLn2ANq.png",
         "homepage": "https://harishv.me/blog/War-on-Diabetes-Designathon",
         "tags": ["UI Design", "Sketch", "Marvel", "Prototyping", "iOS"]
     },
     {
         "name": "NUS-MIT Datathon",
-        "description": "(First Runner Up) NUS-MIT Datathon",
+        "description": "(First Runner Up) NUS-MIT Datathon. In this datathon, our team addressed real clinical problems raised by participating physicians and nurses and generated solutions through analyzing de-identified real-world clinical data. I worked in a cross-disciplinary team and my team was mentored by experienced scientists from NUS, MIT and other collaborating institutes. For our achievement of bringing some conclusive results with the aid of machine learning and data analytics, my team was awarded the 1st Runner Up position in the datathon.",
         "imgUrl": "http://imgur.com/6YAnqrk.png",
         "homepage": "https://harishv.me/blog/NUS-MIT-Datathon",
         "tags": ["Machine Learning", "R", "Python", "PostgreSQL", "Jupyter Notebook"]

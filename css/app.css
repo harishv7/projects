@@ -1,11 +1,10 @@
 @import 'https://fonts.googleapis.com/css?family=Raleway:300,400|Roboto:300,400';
-
 .heading {
-	font-family: 'Montserrat Alternates', 'Open Sans', sans-serif;
+    font-family: 'Montserrat Alternates', 'Open Sans', sans-serif;
 }
 
 .cover-image {
-	/*background-image: url('../images/portfolio3.jpeg');*/
+    /*background-image: url('../images/portfolio3.jpeg');*/
 }
 
 .vcenter {
@@ -15,94 +14,93 @@
 }
 
 .image-center {
-	display: block;
-	margin: auto;
+    display: block;
+    margin: auto;
 }
 
 p {
-	font-size: 18px;
+    font-size: 18px;
 }
 
 .title {
-	font-family: 'Raleway', 'Roboto', serif;
-	word-wrap: break-word;
-	text-transform: capitalize;
-	position: absolute; 
-   top: 210px; 
-   left: 0; 
-   width: 100%;
-   background-color: white;
-   opacity: 0.7;
-   display: none;
+    font-family: 'Raleway', 'Roboto', serif;
+    word-wrap: break-word;
+    text-transform: capitalize;
+    position: absolute;
+    top: 210px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    opacity: 0.7;
+    display: none;
 }
 
 .description {
-	font-family: Roboto, sans-serif;
-	font-size: 20px;
-	font-weight: 300;
-	text-align: center
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center
 }
 
 .drawing {
-	height: 50%;
-	padding-top: 30px;
+    height: 50%;
+    padding-top: 30px;
 }
 
 body {
-	font-family: Raleway, Roboto, sans-serif;
+    font-family: Raleway, Roboto, sans-serif;
 }
 
 .project-heading {
-	font-family: Raleway, Roboto, sans-serif;
+    font-family: Raleway, Roboto, sans-serif;
 }
 
 .project-desc {
-	font-family: Roboto, sans-serif;
-	font-weight: 300;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
 }
 
 .project-logo {
-	width: 100%;
+    width: 100%;
 }
 
 .project-tag {
-	font-family: Roboto, sans-serif;
-	font-weight: 300;
-	padding: 5px;
-	background-color: #cc3333;
-	color: white;
-	border-radius: 3px;
-	margin-right: 5px;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    padding: 5px;
+    background-color: #cc3333;
+    color: white;
+    border-radius: 3px;
+    margin-right: 5px;
 }
 
 .project-url {
-	font-family: Roboto, sans-serif;
-	font-size: 16px;
-	font-weight: 300;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
 }
 
 .custom-h1 {
-	font-family: Raleway, Roboto, sans-serif;
-	font-size: 52px;
-	letter-spacing: 3px;
-	font-weight: 300;
-	/*color: #cc3333;*/
+    font-family: Raleway, Roboto, sans-serif;
+    font-size: 52px;
+    letter-spacing: 3px;
+    font-weight: 300;
+    /*color: #cc3333;*/
 }
 
 .custom-heading {
-	font-family: Raleway, Roboto, sans-serif;
-	font-weight: 300;
-	padding-top: 0px;
-	margin-top: 0px;
-	width: 100%;
+    font-family: Raleway, Roboto, sans-serif;
+    font-weight: 300;
+    padding-top: 0px;
+    margin-top: 0px;
+    width: 100%;
 }
 
 .custom-sub-heading {
-	font-family: Raleway, Roboto, sans-serif;
-	font-size: 48px;
-	font-weight: 300;
+    font-family: Raleway, Roboto, sans-serif;
+    font-size: 48px;
+    font-weight: 300;
 }
-
 
 hr {
     border: 0;
@@ -111,37 +109,36 @@ hr {
 }
 
 .brand {
-	font-family: Raleway, Roboto, sans-serif;
-	font-weight: 300;
-	padding: 0 10 10 10;
+    font-family: Raleway, Roboto, sans-serif;
+    font-weight: 300;
+    padding: 0 10 10 10;
 }
 
 .nopadding {
-   padding: 0 !important;
-   margin: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 .custom-btn {
-	display: inline-block;
-	width: 200px;
-	padding: 15px;
-	margin: 5px;
-	font-size: 16px;
-	color: #000;
-	font-family: Raleway, Roboto, sans-serif;
-	background-color: transparent;
-	font-weight: 300;
-	border: 2px solid #000;
-	text-align: center;
-	outline: none;
-	text-decoration: none;
+    display: inline-block;
+    width: 200px;
+    padding: 15px;
+    margin: 5px;
+    font-size: 16px;
+    color: #000;
+    font-family: Raleway, Roboto, sans-serif;
+    background-color: transparent;
+    font-weight: 300;
+    border: 2px solid #000;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
 }
+
 .custom-btn:hover,
 .custom-btn:active {
-	background-color: rgba(206, 93, 93, 0.7);
-	border-color: #000;
-	color: #fff;
-	transition: color 0.3s ease-in,
-		background-color 0.3s ease-in,
-		border-color 0.3s ease-in;
+    background-color: rgba(206, 93, 93, 0.7);
+    border-color: #000;
+    color: #fff;
+    transition: color 0.3s ease-in, background-color 0.3s ease-in, border-color 0.3s ease-in;
 }
