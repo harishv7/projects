@@ -26,12 +26,13 @@ var App = React.createClass({
 		var populatedImgUrls = [];
 		var populatedTags = [];
 
-		var apiUrl = "https://harishv.me/projects/projects.json";
+		// var apiUrl = "https://harishv.me/projects/projects.json";
+		var apiUrl = "./projects.json";
 		this.serverRequest = $.get(apiUrl, function (result) {
 			for (var i = 0; i < result.length; i++) { 
 				populatedNames.push(result[i].name);
 				populatedDescriptions.push(result[i].description);
-				populatedImgUrls.push(result[i].imgUrl.replace("http", "https"));
+				populatedImgUrls.push(result[i].imgUrls);
 				populatedHomepages.push(result[i].homepage);
 				populatedTags.push(result[i].tags);
 			}
@@ -58,7 +59,7 @@ var App = React.createClass({
 		var portfolioRowsArr = [];
 
 		for(var i = 0; i < namesOfProjects.length; i++) {
-			portfolioRowsArr.push(<PortfolioItem name={namesOfProjects[i]} desc={descOfProjects[i]} homeUrl={homepagesOfProjects[i]} imgUrl={imgUrlsOfProjects[i]} tags={tagsOfProjects[i]} key={i} />);
+			portfolioRowsArr.push(<PortfolioItem name={namesOfProjects[i]} desc={descOfProjects[i]} homeUrl={homepagesOfProjects[i]} imgUrls={imgUrlsOfProjects[i]} tags={tagsOfProjects[i]} key={i} id={i} />);
 			portfolioRowsArr.push(<hr/>)
 		}
 
@@ -77,12 +78,68 @@ var PortfolioItem = React.createClass({
 		for(var i = 0; i < tags.length; i++) {
 			tagsToShow.push(<span className="project-tag">{tags[i]}</span>);
 		}
+		var id = "#" + this.props.id;
+		var idName = "" + this.props.id;
+
+		var imagesToShow = [];
+		var carouselIndicators = [];
+		var images = this.props.imgUrls;
+
+		var moreThanOneImage = false;
+		var final = [];
+		if(images.length === 1) {
+			final.push(<img src={images[0]} className="project-logo img-responsive" />)
+		} else {
+			moreThanOneImage = true;
+			for(var i = 0; i < images.length; i++) {
+				if(i == 0) {
+					carouselIndicators.push(<li data-target={id} data-slide-to={i} className="active"></li>)
+
+					imagesToShow.push(
+						<div className="item active">
+							<img src={images[i]} className="project-logo img-responsive" />
+						</div>
+					);
+				} else {
+					carouselIndicators.push(<li data-target={id} data-slide-to={i}></li>)
+
+					imagesToShow.push(
+						<div className="item">
+							<img src={images[i]} className="project-logo img-responsive" />
+						</div>
+					);
+				}
+			}
+
+			final.push(
+				<div id={idName} className="carousel slide" data-ride="carousel">
+
+						<ol className="carousel-indicators">
+							{carouselIndicators}
+						</ol>
+
+						<div className="carousel-inner">
+							{imagesToShow}
+						</div>
+
+						<a className="left carousel-control" href={id} data-slide="prev">
+							<span className="glyphicon glyphicon-chevron-left"></span>
+							<span className="sr-only">Previous</span>
+						</a>
+						<a className="right carousel-control" href={id} data-slide="next">
+							<span className="glyphicon glyphicon-chevron-right"></span>
+							<span className="sr-only">Next</span>
+						</a>
+					</div>
+			);
+		}
+
 		return (
 			<div className="section">
 		      <div className="container">
 		        <div className="row">
 		          <div className="col-md-6">
-		            <img src={this.props.imgUrl} className="project-logo img-responsive" />
+				  {final}
 		          </div>
 		          <div className="col-md-6">
 		            <h1 className="project-heading">{this.props.name}</h1>

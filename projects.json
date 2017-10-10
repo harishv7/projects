@@ -1,132 +1,132 @@
 [{
         "name": "HealthX",
         "description": "(First Prize) Crowdsourced Fitness App Design. Singapore has the second highest proportion of diabetics among developed nations, according to a report in 2015 by the International Diabetes Federation (IDF). In this designathon, my team aimed to solve the problem of the lack of physical activity among working adults in Singapore, and at the same time motivate pre-diabetics to undertake an active lifestyle with ease. For our concept and design of a crowdsourced fitness app, we won the first prize in the designathon.",
-        "imgUrl": "http://imgur.com/LLn2ANq.png",
+        "imgUrls": ["images/healthx/Slide1.png", "images/healthx/Slide2.png", "images/healthx/Slide3.png", "images/healthx/Slide4.png", "images/healthx/Slide5.png", "images/healthx/Slide6.png", "images/healthx/Slide7.png", "images/healthx/Slide8.png", "images/healthx/Slide9.png"],
         "homepage": "https://harishv.me/blog/War-on-Diabetes-Designathon",
         "tags": ["UI Design", "Sketch", "Marvel", "Prototyping", "iOS"]
     },
     {
         "name": "NUS-MIT Datathon",
         "description": "(First Runner Up) NUS-MIT Datathon. In this datathon, our team addressed real clinical problems raised by participating physicians and nurses and generated solutions through analyzing de-identified real-world clinical data. I worked in a cross-disciplinary team and my team was mentored by experienced scientists from NUS, MIT and other collaborating institutes. For our achievement of bringing some conclusive results with the aid of machine learning and data analytics, my team was awarded the 1st Runner Up position in the datathon.",
-        "imgUrl": "http://imgur.com/6YAnqrk.png",
+        "imgUrls": ["http://imgur.com/6YAnqrk.png"],
         "homepage": "https://harishv.me/blog/NUS-MIT-Datathon",
         "tags": ["Machine Learning", "R", "Python", "PostgreSQL", "Jupyter Notebook"]
     },
     {
         "name": "Harish V - Blog",
         "description": "My personal blog - I write about life and code in general.",
-        "imgUrl": "http://imgur.com/prE7rln.png",
+        "imgUrls": ["http://imgur.com/prE7rln.png"],
         "homepage": "http://harishv.me/blog/",
         "tags": ["HTML", "CSS", "JS", "Bootstrap", "Jekyll", "Markdown"]
     },
     {
         "name": "Harish V - Photography",
         "description": "My own mosaic of photos. #iPhonePhotography",
-        "imgUrl": "http://imgur.com/iNCuZQg.png",
+        "imgUrls": ["http://imgur.com/iNCuZQg.png"],
         "homepage": "http://harishv.me/photography/",
         "tags": ["HTML", "CSS", "JS", "jQuery"]
     },
     {
         "name": "Friendezvous",
         "description": "Friendezvous is a web application that allows users to easily create and schedule meeting in a group. Friendezvous helps eliminate the hassle that comes about when organising meetings in a huge group by collecting the free slots of the members and their preferred locations. Once this is done, Friendezvous allows the admin of the meeting to confirm a selected time and place and informs all participants automatically.",
-        "imgUrl": "http://imgur.com/L6VrZt8.png",
+        "imgUrls": ["http://imgur.com/L6VrZt8.png"],
         "homepage": "http://friendezvous.herokuapp.com/",
         "tags": ["HTML", "CSS", "JS", "Bootstrap", "SQL", "PHP", "jQuery", "Google APIs"]
     },
     {
         "name": "Fini",
         "description": "FINI is a free and simple user-friendly software that aims to solve one of the most common dilemmas we face daily: Task Management. In the context of our modern world, we are often swarmed with many tasks and deadlines from work, activities with friends and events that we cannot afford to miss. In order to successfully complete every work assignment you have and be the life of the party at every event you attend, you need to manage your priorities effectively and efficiently. How is that possible you may ask? FINI is the answer. With FINI, you will be able to organize your tasks and accomplish them efficiently. That, is the very meaning of FINI, which translates to “finished” or “accomplished” in French.",
-        "imgUrl": "http://imgur.com/U1VnpEv.png",
+        "imgUrls": ["http://imgur.com/U1VnpEv.png"],
         "homepage": "https://github.com/cs2103aug2015-t16-1j/fini",
         "tags": ["Java", "JavaFX", "CSS"]
     },
     {
         "name": "Prosper",
         "description": "Prosper is what we call the Property Resale Price Forecaster. This application helps to predict your flat's resale value in the future! That's right! Plus, you also get a pro-analytics feature that allows users to know when should they sell their flat based on their expected annual growth rate of the flat price. Awarded Top 5 in Data Science Challenge 2016 hosted by Microsoft.",
-        "imgUrl": "http://imgur.com/gUwhjIM.png",
+        "imgUrls": ["http://imgur.com/gUwhjIM.png"],
         "homepage": "https://github.com/harishv7/Prosper/releases",
         "tags": ["Java", "JavaFX", "CSS"]
     },
     {
         "name": "Iridescent",
         "description": "Iridescent is a prototype of a educational application which motivates students to learn by showing them the future value of the education content they are studying. Created during NUS EdTech Challenge 2017.",
-        "imgUrl": "http://imgur.com/aTqfkAa.png",
+        "imgUrls": ["http://imgur.com/aTqfkAa.png"],
         "homepage": "http://harishv.me/iridescent/",
         "tags": ["Sketch", "Marvel", "iOS Prototyping"]
     },
     {
         "name": "MoneySmart Calculator",
         "description": "A group of financial calculators created for people to easily make calculations on their mortgage, ABSD, compound interest etc. Done as part of my internship with MoneySmart.sg",
-        "imgUrl": "http://imgur.com/ljK7Xl7.png",
+        "imgUrls": ["http://imgur.com/ljK7Xl7.png"],
         "homepage": "http://www.moneysmart.sg/",
         "tags": ["HTML", "CSS", "JS", "ReactJS", "React Native", "Grunt", "iOS", "Xcode"]
     },
     {
         "name": "Tweet Battle",
         "description": "Given 2 Twitter handles, this app generates tweets from the 2 users' tweet history using Markov's models. Built during Facebook Hackathon SG 2016.",
-        "imgUrl": "http://imgur.com/gUtF3RA.png",
+        "imgUrls": ["http://imgur.com/gUtF3RA.png"],
         "homepage": "https://github.com/advaypal/TweetBattle",
         "tags": ["HTML", "CSS", "JS", "ReactJS", "React Native", "Flask", "Heroku"]
     },
     {
         "name": "Mirra Fine Arts",
         "description": "A corporate website for Mirra Fine Arts in Singapore. Mirra Fine Arts provides excellent keyboard and guitar lessons for all people of all ages.",
-        "imgUrl": "http://imgur.com/SutQxbU.png",
+        "imgUrls": ["http://imgur.com/SutQxbU.png"],
         "homepage": "http://www.mirrafinearts.com",
         "tags": ["HTML", "CSS", "JS", "Bootstrap", "jQuery", "Gulp"]
     },
     {
         "name": "Aparna Weds Kaushik - A Wedding Website by Harish V",
         "description": "A wedding website for my friends which provides details of the occassion, venue and allows users to RSVP.",
-        "imgUrl": "http://imgur.com/lfVR4BC.png",
+        "imgUrls": ["http://imgur.com/lfVR4BC.png"],
         "homepage": "http://www.aparnawedskaushik.life/",
         "tags": ["HTML", "CSS", "JS", "Bootstrap", "ReactJS"]
     },
     {
         "name": "Moovee Finder",
         "description": "A search engine website for movie information.",
-        "imgUrl": "http://imgur.com/3wButh8.png",
+        "imgUrls": ["http://imgur.com/3wButh8.png"],
         "homepage": "http://www.harishv.me/MooveeFinder/",
         "tags": ["HTML", "CSS", "JS", "Bootstrap", "ReactJS"]
     },
     {
         "name": "CapCalc",
         "description": "A CAP Calculator to help NUS students calculate theirs easily.",
-        "imgUrl": "http://imgur.com/9F5VaSe.png",
+        "imgUrls": ["http://imgur.com/9F5VaSe.png"],
         "homepage": "http://www.harishv.me/capcalc/",
         "tags": ["HTML", "CSS", "JS", "Bootstrap", "ReactJS"]
     },
     {
         "name": "GitHub Portfolio",
         "description": "A website which automatically creates a portfolio from all of your GitHub repositories.",
-        "imgUrl": "http://imgur.com/OKpMwtc.png",
+        "imgUrls": ["http://imgur.com/OKpMwtc.png"],
         "homepage": "http://harishv.me/portfolio/",
         "tags": ["HTML", "CSS", "JS", "Bootstrap", "ReactJS"]
     },
     {
         "name": "ConTag",
         "description": "(First Runner Up - Gamecraft 2014). This is a 2-player game created at Gamecraft 2014 (a 24 hour hackathon to create a working prototype of a game). ConTag is based on the theme of 'Contact' and is inspired from the popular Bomberman game.",
-        "imgUrl": "http://imgur.com/K9Jrnns.png",
+        "imgUrls": ["http://imgur.com/K9Jrnns.png"],
         "homepage": "",
         "tags": ["Game Design", "Gamemaker", "Sprite Design"]
     },
     {
         "name": "Twisted Maze",
         "description": "TwistedMaze was built in just 24 hours for a national game-hackathon, Gamecraft 2015. Twisted Maze is a game that would put you inside an ever-changing maze. Starting from the middle of a circular maze, you have to find your exit. However, here's the twist: The maze is not stationary. At certain intervals, the maze will rotate around the center. So here's the challenge: how fast can you escape?",
-        "imgUrl": "http://imgur.com/VgPbHs0.png",
+        "imgUrls": ["http://imgur.com/VgPbHs0.png"],
         "homepage": "https://github.com/harishv7/TwistedMaze",
         "tags": ["Game Design", "Gamemaker", "Sprite Design"]
     }, {
         "name": "Simple Clock",
         "description": "A simple clock with randomised motivational quotes - inspired by Momemtum for Chrome.",
-        "imgUrl": "http://imgur.com/qMxKDnZ.png",
+        "imgUrls": ["http://imgur.com/qMxKDnZ.png"],
         "homepage": "http://harishv.me/simpleclock",
         "tags": ["HTML", "CSS", "JS", "Bootstrap"]
     },
     {
         "name": "Singai Thamizhan",
         "description": "Singai Thamizhan was Founded in November 2013. It is a movement and a cause which aims to promote and foster cohesiveness and an authentic identity for the Singapore Tamilians. Our tagline: சிங்கை தமிழன் சிகரம் தொடுபவன்!",
-        "imgUrl": "http://imgur.com/W43Rnhs.png",
+        "imgUrls": ["images/minified/singaithamizhan.jpg"],
         "homepage": "http://singaithamizhan.github.io",
         "tags": ["HTML", "CSS", "JS", "Bootstrap"]
     }
