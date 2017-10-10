@@ -71,6 +71,13 @@ var App = React.createClass({
 	}
 });
 
+function replaceHttpWithHttps(str) {
+	if(str.indexOf("http") !== -1 ) {
+		str = str.replace("http", "https");
+	}
+	return str;
+}
+
 var PortfolioItem = React.createClass({
 	render: function() {
 		var tags = this.props.tags;
@@ -88,16 +95,18 @@ var PortfolioItem = React.createClass({
 		var moreThanOneImage = false;
 		var final = [];
 		if(images.length === 1) {
-			final.push(<img src={images[0]} className="project-logo img-responsive" />)
+			var imageUrl = replaceHttpWithHttps(images[0]);
+			final.push(<img src={imageUrl} className="project-logo img-responsive" />)
 		} else {
 			moreThanOneImage = true;
 			for(var i = 0; i < images.length; i++) {
+				var imageUrl = replaceHttpWithHttps(images[i]);
 				if(i == 0) {
 					carouselIndicators.push(<li data-target={id} data-slide-to={i} className="active"></li>)
 
 					imagesToShow.push(
 						<div className="item active">
-							<img src={images[i]} className="project-logo img-responsive" />
+							<img src={imageUrl} className="project-logo img-responsive" />
 						</div>
 					);
 				} else {
@@ -105,7 +114,7 @@ var PortfolioItem = React.createClass({
 
 					imagesToShow.push(
 						<div className="item">
-							<img src={images[i]} className="project-logo img-responsive" />
+							<img src={imageUrl} className="project-logo img-responsive" />
 						</div>
 					);
 				}
