@@ -1,4 +1,10 @@
 [{
+        "name": "Cup-Shuffling Game (Smart Contract System - Inspired by Ethereum)",
+        "description": "Publicly transparent smart contract system inspired by Ethereum. Built for CS4236, Cryptography Theory & Practice in NUS.",
+        "imgUrls": ["images/cup-shuffling/Slide1.png", "images/cup-shuffling/Slide2.png"],
+        "homepage": "https://harishv.me/blog/War-on-Diabetes-Designathon",
+        "tags": ["NodeJS", "Mongo", "Socket", "Ethereum", "Blockchain"]
+    }, {
         "name": "HealthX",
         "description": "(First Prize) Crowdsourced Fitness App Design. Singapore has the second highest proportion of diabetics among developed nations, according to a report in 2015 by the International Diabetes Federation (IDF). In this designathon, my team aimed to solve the problem of the lack of physical activity among working adults in Singapore, and at the same time motivate pre-diabetics to undertake an active lifestyle with ease. For our concept and design of a crowdsourced fitness app, we won the first prize in the designathon.",
         "imgUrls": ["images/healthx/Slide1.png", "images/healthx/Slide2.png", "images/healthx/Slide3.png", "images/healthx/Slide4.png", "images/healthx/Slide5.png", "images/healthx/Slide6.png", "images/healthx/Slide7.png", "images/healthx/Slide8.png", "images/healthx/Slide9.png"],
