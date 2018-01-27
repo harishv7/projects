@@ -2,7 +2,7 @@
         "name": "Cup-Shuffling Game (Smart Contract System - Inspired by Ethereum)",
         "description": "Publicly transparent smart contract system inspired by Ethereum. Built for CS4236, Cryptography Theory & Practice in NUS.",
         "imgUrls": ["images/cup-shuffling/Slide1.png", "images/cup-shuffling/Slide2.png"],
-        "homepage": "https://harishv.me/blog/War-on-Diabetes-Designathon",
+        "homepage": "",
         "tags": ["NodeJS", "Mongo", "Socket", "Ethereum", "Blockchain"]
     }, {
         "name": "HealthX",
