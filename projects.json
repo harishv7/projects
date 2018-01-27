@@ -1,6 +1,6 @@
 [{
         "name": "Cup-Shuffling Game (Smart Contract System - Inspired by Ethereum)",
-        "description": "Publicly transparent smart contract system inspired by Ethereum. Built for CS4236, Cryptography Theory & Practice in NUS.",
+        "description": "Publicly transparent smart contract system inspired by Ethereum. Allows players to play a cup-shuffling game where they make a guess of the winning cup. Built for CS4236, Cryptography Theory & Practice in NUS.",
         "imgUrls": ["images/cup-shuffling/Slide1.png", "images/cup-shuffling/Slide2.png"],
         "homepage": "",
         "tags": ["NodeJS", "Mongo", "Socket", "Ethereum", "Blockchain"]
